@@ -1,0 +1,106 @@
+/* PARAMETRES GENERAUX */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #7cc9f0;
+}
+
+/* PARAMETRES HEADER */
+header {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #1e1e1e;
+  padding: 0 0 0 50px;
+}
+
+/* PARAMETRES NAV */
+nav {
+  display: flex;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+nav a,
+nav a:visited {
+  color: #fefefe;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  padding: 5px;
+  border-bottom: 2px solid #fefefe;
+}
+
+nav a:hover,
+nav a:visited:hover {
+  color: #7cc9f0;
+  border-bottom: 2px solid #7cc9f0;
+}
+
+/* PARAMETRES FOOTER */
+
+footer {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1e1e1e;
+  color: #fefefe;
+}
+
+footer a,
+footer a:visited {
+  color: #fefefe;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #7cc9f0;
+}
+
+/* PARAMETRES RESPONSIVE */
+@media only screen and (orientation: portrait) {
+  /* HEADER RESPONSIVE */
+  header {
+    flex-direction: column;
+    padding: 0;
+  }
+  header img {
+    width: 100%;
+  }
+  nav {
+    padding: 5px;
+    font-size: 0.7em;
+    gap: 5px;
+  }
+  nav a,
+  nav a:visited {
+    padding: 2px;
+  }
+}
+
+@media only screen and (max-width: 280px) and (orientation: portrait) {
+  nav a {
+    font-size: 0.8em;
+  }
+  footer {
+    font-size: 0.8em;
+  }
+}
