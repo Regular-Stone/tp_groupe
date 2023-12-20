@@ -6,11 +6,12 @@
 }
 
 body {
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  background: #7cc9f0;
+  background: #fefefe;
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /* PARAMETRES HEADER */
@@ -33,7 +34,6 @@ nav ul {
   display: flex;
   list-style: none;
   width: 100%;
-  gap: 10px;
   justify-content: space-evenly;
 }
 
@@ -41,7 +41,6 @@ nav a,
 nav a:visited {
   color: #fefefe;
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
   font-weight: bold;
   padding: 5px;
   border-bottom: 2px solid #fefefe;
@@ -51,6 +50,42 @@ nav a:hover,
 nav a:visited:hover {
   color: #7cc9f0;
   border-bottom: 2px solid #7cc9f0;
+}
+
+/* PARAMETRES DU CONTENU */
+
+.container {
+  width: 80%;
+  margin: auto auto;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container h2,
+.container h3 {
+  text-align: center;
+}
+
+.container span {
+  color: #7cc9f0;
+}
+
+.container article div {
+  margin: 20px 0;
+  text-align: center;
+}
+.container article div h3 {
+  margin: 10px 0;
+}
+
+.container article div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container iframe {
+  width: 50%;
 }
 
 /* PARAMETRES FOOTER */
@@ -78,6 +113,29 @@ footer a:hover {
 /* PARAMETRES RESPONSIVE */
 @media only screen and (orientation: portrait) {
   /* HEADER RESPONSIVE */
+  header {
+    flex-direction: column;
+    padding: 0;
+  }
+  header img {
+    width: 100%;
+  }
+  nav {
+    padding: 5px;
+    font-size: 0.7em;
+    gap: 5px;
+  }
+  nav a,
+  nav a:visited {
+    padding: 2px;
+  }
+  /* CONTENU RESPONSIVE */
+  .container iframe {
+    width: 70%;
+    height: 50%;
+  }
+}
+@media only screen and (max-width: 950px) and (orientation: landscape) {
   header {
     flex-direction: column;
     padding: 0;
