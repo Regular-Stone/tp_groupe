@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta chartset="utf-8" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" alt="" />
+      <nav>
+        <ul>
+          <li><a href="#">ACCUEIL</a></li>
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JAVASCRIPT</a></li>
+          <li><a href="#">API</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--FORMULAIRE-->
+
+    <div class="formContent">
+      <form id="contactForm" method="POST" action="monProgramme.php">
+        <h1 align="center">Contactez-nous</h1>
+        <p align="center">Nous vous répondrons au plus vite ;-)</p>
+        <div class="separation"></div>
+        <div class="corpsFormulaire">
+          <div class="gauche">
+            <div class="groupe"><input type="text" name="Nom" placeholder="Nom *" maxlength="20" minlength="2" /></div>
+            <div class="groupe"><input type="text" name="Prenom" placeholder="Prénom *" maxlength="20" minlength="2" /></div>
+            <div class="groupe"><input type="email" name="email" placeholder="E-mail *" /></div>
+            <div class="groupe"><input type="tel" name="Numéro" placeholder="Tél *" /></div>
+            <div class="groupe"><input type="file" name="file" accept=".png, .jpeg, .gif, .pdf" /></div>
+          </div>
+          <div class="droite">
+            <!--<div class="groupe"><input type="text" name="Sujet" placeholder="Sujet" maxlength="50" minlength="2" /></div>-->
+            <div class="groupe">
+              <select name="formList" id="formList">
+                <option value="">..Choisissez votre sujet..</option>
+                <option value="formationDev">Formation Dev Web</option>
+                <option value="autreFormation">Informations autre formation</option>
+                <option value="information">Inscription réunion d'information</option>
+                <option value="Autre">Autre sujet</option>
+              </select>
+            </div>
+            <div class="groupe"><textarea name="comment" placeholder="Message *"></textarea></div>
+          </div>
+        </div>
+        <div class="envoi" align="center">
+          <button>Envoyer</button><br />
+          <label for="button"> * champs obligatoires</label>
+        </div>
+      </form>
+    </div>
+
+    <footer>
+      <p>
+        Copyright © 2023
+        <a href="https://www.adrar-numerique.com/">ADRAR Pôle Numérique</a>
+      </p>
+    </footer>
+  </body>
+</html>
