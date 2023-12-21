@@ -8,11 +8,9 @@
 body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   background: #fefefe;
   font-family: "Lato", sans-serif;
   width: 100%;
-  text-align: left;
   overflow-x: hidden;
 }
 
@@ -56,6 +54,45 @@ nav a:visited:hover {
 
 /* PARAMETRES DU CONTENU */
 
+.container {
+  width: 80%;
+  margin: auto auto;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container h2,
+.container h3 {
+  text-align: center;
+}
+
+.container span {
+  color: #7cc9f0;
+}
+
+.container article div {
+  margin: 20px 0;
+  text-align: center;
+}
+.container article div h3 {
+  margin: 10px 0;
+}
+
+.container article div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container iframe {
+  width: 50%;
+}
+
+.container img {
+  width: 150px;
+  height: 150px;
+}
+
 /* PARAMETRES FOOTER */
 
 footer {
@@ -77,65 +114,7 @@ footer a:visited {
 footer a:hover {
   color: #7cc9f0;
 }
-/**/
-
-h2 {
-  text-align: center;
-  margin-top: 10px;
-}
-h2 span {
-  color: #7cc9f0;
-}
-
-#logoHTML {
-  height: 150px;
-  margin: 20px auto 10px auto;
-}
-
-.container {
-  width: 80%;
-  margin: auto auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.container ul {
-  margin-bottom: 20px;
-}
-
-article {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-article img {
-  width: 40%;
-  display: flex;
-  align-content: center;
-  margin-bottom: 20px;
-}
-
-h4 {
-  margin: 10px 0;
-  text-align: center;
-  font-size: large;
-}
-
-h5:last-of-type {
-  margin: 20px 0;
-}
-
-h4:hover {
-  background-color: #7cc9f0;
-}
-
-.video {
-  margin: 0 auto 30px auto;
-  height: 70%;
-  width: 50%;
-}
+/* PAGE JAVASCRIPT */
 
 /* PARAMETRES RESPONSIVE */
 @media only screen and (orientation: portrait) {
@@ -149,15 +128,19 @@ h4:hover {
   }
   nav {
     padding: 5px;
-    font-size: 0.7em;
+    font-size: 0.8em;
     gap: 5px;
   }
   nav a,
   nav a:visited {
     padding: 2px;
   }
+  /* CONTENU RESPONSIVE */
+  .container iframe {
+    width: 70%;
+    height: 100%;
+  }
 }
-
 @media only screen and (max-width: 950px) and (orientation: landscape) {
   header {
     flex-direction: column;
