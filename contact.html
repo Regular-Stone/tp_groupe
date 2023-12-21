@@ -29,7 +29,7 @@
     <!--FORMULAIRE-->
 
     <div class="formContent">
-      <form id="contactForm">
+      <form id="contactForm" method="POST" action="monProgramme.php">
         <h1 align="center">Contactez-nous</h1>
         <p align="center">Nous vous répondrons au plus vite ;-)</p>
         <div class="separation"></div>
@@ -42,7 +42,16 @@
             <div class="groupe"><input type="file" name="file" accept=".png, .jpeg, .gif, .pdf" /></div>
           </div>
           <div class="droite">
-            <div class="groupe"><input type="text" name="Sujet" placeholder="Sujet" maxlength="50" minlength="2" /></div>
+            <!--<div class="groupe"><input type="text" name="Sujet" placeholder="Sujet" maxlength="50" minlength="2" /></div>-->
+            <div class="groupe">
+              <select name="formList" id="formList">
+                <option value="">..Choisissez votre sujet..</option>
+                <option value="formationDev">Formation Dev Web</option>
+                <option value="autreFormation">Informations autre formation</option>
+                <option value="information">Inscription réunion d'information</option>
+                <option value="Autre">Autre sujet</option>
+              </select>
+            </div>
             <div class="groupe"><textarea name="comment" placeholder="Message *"></textarea></div>
           </div>
         </div>
