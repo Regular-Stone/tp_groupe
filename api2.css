@@ -1,3 +1,4 @@
+/* PARAMETRES GENERAUX */
 * {
   padding: 0;
   margin: 0;
@@ -7,11 +8,12 @@
 body {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   justify-content: space-between;
   background: #fefefe;
   font-family: "Lato", sans-serif;
   width: 100%;
+  text-align: left;
+  overflow-x: hidden;
 }
 
 /* PARAMETRES HEADER */
@@ -21,7 +23,7 @@ header {
   align-items: center;
   justify-content: space-evenly;
   background: #1e1e1e;
-  padding: 0 0 0 50px;
+  padding: 5px 0 5px 50px;
 }
 
 /* PARAMETRES NAV */
@@ -75,67 +77,72 @@ footer a:visited {
 footer a:hover {
   color: #7cc9f0;
 }
+/**/
 
-/* FORMULAIRE */
+h2 {
+  text-align: center;
+  margin-top: 10px;
+}
+h2 span {
+  color: #7cc9f0;
+}
 
-#contactForm p {
-  margin-bottom: 20px;
+#logoHTML {
+  width: 10%;
+  margin: 20px auto;
 }
-form .separation {
-  width: 100%;
-  height: 2px;
-  background-color: #65c0ed;
-  margin-bottom: 10px;
-}
-form .corpsFormulaire {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-form .corpsFormulaire .groupe {
+
+.container {
+  width: 80%;
+  margin: auto auto;
   display: flex;
   flex-direction: column;
-  margin: 20px;
 }
 
-form .corpsFormulaire .groupe input,
-select {
-  border: 2px solid #65c0ed;
-  background-color: rgba(101, 192, 237, 0.1);
-  box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.3);
-  padding: 10px;
+.container ul {
+  margin-bottom: 20px;
+}
+
+article {
   width: 100%;
-  font-size: larger;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-form .corpsFormulaire .groupe textarea {
-  border: 2px solid #65c0ed;
-  background-color: rgba(101, 192, 237, 0.1);
-  box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.3);
-  padding: 10px;
-  width: 400px;
-  height: 245px;
-  font-size: 1.5em;
+article img {
+  width: 20%;
+  display: flex;
+  align-content: center;
+  margin-bottom: 20px;
 }
 
-button {
-  margin: 10px;
-  padding: 5px;
-  background-color: #65c0ed;
-  border: 2px solid #65c0ed;
-  box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.3);
-  color: white;
-  font-weight: bold;
-
-  font-size: 20px;
-  border-radius: 10px;
-  width: 150px;
+#imgGoogle {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-content: center;
+  margin-top: 20px;
 }
-button:hover {
-  background-color: #ffffff;
-  border: 2px solid #65c0ed;
-  box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.3);
-  color: #65c0ed;
+
+h4 {
+  margin: 10px 0;
+  text-align: center;
+  font-size: large;
+}
+
+h5:last-of-type {
+  margin: 20px 0;
+}
+
+h4:hover {
+  background-color: #7cc9f0;
+}
+
+.video {
+  margin: 0 auto 30px auto;
+  height: 70%;
+  width: 50%;
 }
 
 /* PARAMETRES RESPONSIVE */
@@ -158,6 +165,7 @@ button:hover {
     padding: 2px;
   }
 }
+
 @media only screen and (max-width: 950px) and (orientation: landscape) {
   header {
     flex-direction: column;
@@ -183,12 +191,5 @@ button:hover {
   }
   footer {
     font-size: 0.8em;
-  }
-  form .corpsFormulaire .groupe textarea {
-    width: 163px;
-    height: 245px;
-  }
-  button {
-    width: 100px;
   }
 }

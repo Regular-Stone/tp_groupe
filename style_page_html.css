@@ -88,8 +88,8 @@ h2 span {
 }
 
 #logoHTML {
-  height: 150px;
-  margin: 20px auto 10px auto;
+  width: 10%;
+  margin: 20px auto;
 }
 
 .container {
@@ -115,6 +115,14 @@ article img {
   display: flex;
   align-content: center;
   margin-bottom: 20px;
+}
+
+#imgGoogle {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-content: center;
+  margin-top: 20px;
 }
 
 h4 {
