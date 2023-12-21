@@ -43,3 +43,4 @@ heart_button.addEventListener("click", (e) => {
         document.body.prepend(uwu2);
     }
 })
+
