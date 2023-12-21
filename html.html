@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tout sur le HTML</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/html_css.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./img/logo.png" alt="le logo de l'adrar pour un Yann heureux" />
+      <nav>
+        <ul>
+          <li><a href="index.html">ACCUEIL</a></li>
+          <li><a href="#">HTML</a></li>
+          <li><a href="css.html">CSS</a></li>
+          <li><a href="js.html">JAVASCRIPT</a></li>
+          <li><a href="api.html">API</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h2><span>LE HTML</span></h2>
+
+    <img
+      src="./img/logo_html.png"
+      style="height: 150px"
+      alt="logo html"
+      id="logoHTML"
+    />
+
+    <div class="container">
+      <article>
+        HTML (pour HyperText Markup Language, qu'on peut traduire en « langage
+        de balisage hypertexte ») est le langage utilisé pour structurer une
+        page web et son contenu. On peut par exemple organiser le contenu en un
+        ensemble de paragraphes, une liste d'éléments, utiliser des images ou
+        des tableaux de données. Dans cet article, nous verrons les notions de
+        base pour comprendre HTML et ses fonctionnalités.
+      </article>
+
+      <h4>Qu'est-ce que HTML ?</h4>
+
+      <article>
+        HTML est un langage de balisage qui définit la structure du contenu. Un
+        document HTML est une suite d'éléments utilisés pour encadrer
+        différentes parties du contenu afin de les faire apparaître ou se
+        comporter d'une certaine façon. Les balises autour du contenu permettent
+        de transformer une image ou un texte pour obtenir un lien vers une autre
+        page, de créer des titres, etc.
+      </article>
+
+      <h4>Anatomie d'un élément HTML</h4>
+
+      <article>
+        <img src="./img/image illustration pour Html.png" alt="img html" />
+      </article>
+
+      <article>
+        <h5>Les parties principales de notre élément sont :</h5>
+        <br />
+
+        <ul>
+          <li>
+            <strong>La balise ouvrante</strong> : celle-ci se compose du nom de
+            l'élément (ici p), entre deux chevrons (le premier ouvrant < et le
+            second fermant >). Cela indique le début de l'élément, ici cela
+            indique où le paragraphe commence.
+          </li>
+          <li>
+            <strong>La balise fermante</strong> : à la différence de la balise
+            ouvrante, une barre oblique (slash) est ajoutée avant le nom de
+            l'élément. Cela indique la fin de l'élément. Dans notre exemple,
+            c'est l'endroit où le paragraphe s'arrête. Oublier cette balise
+            fermante est une erreur qu'on fait souvent au début et qui peut
+            déclencher des effets étranges et indésirables.
+          </li>
+          <li>
+            <strong>Le contenu</strong> : le contenu de l'élément. Pour cet
+            exemple, il s'agit uniquement de texte.
+          </li>
+          <li>
+            <strong>L'élément</strong> : l'ensemble formé par la balise
+            ouvrante, la balise fermante et le contenu constitue l'élément.
+          </li>
+        </ul>
+      </article>
+
+      <article>
+        Les attributs contiennent des informations supplémentaires à propos de
+        l'élément et qui ne sont pas affichées avec le contenu. Ici, class
+        correspond au nom de l'attribut et editor-note correspond à la valeur de
+        l'attribut. L'attribut class permet de donner un identifiant non unique
+        qui peut être utilisé pour cibler l'élément (et tous les autres éléments
+        qui partagent la même valeur d'attribut pour class), notamment pour la
+        mise en forme ou la manipulation avec des scripts. Certains attributs
+        n'ont pas de valeur, comme required.
+      </article>
+
+      <article>
+        <h5>Les attributs qui ont une valeur observent ces règles :</h5>
+        <ul>
+          <li>
+            Il y a un espace entre le nom de l'attribut et le nom de l'élément
+            (ou le précédent attribut si l'élément a déjà un ou plusieurs
+            attributs).
+          </li>
+          <li>Le nom de l'attribut est suivi par un signe égal (=).</li>
+          <li>
+            La valeur de l'attribut est délimitée par des doubles (") ou simples
+            (') quotes.
+          </li>
+        </ul>
+      </article>
+
+      <article>
+        <img src="./img/image2.JPG" alt="note sur fond bleu" />
+      </article>
+
+      <h4>Pour en savoir plus, consultez cette vidéo</h4>
+
+      <article class="video">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/8FqZZrbnwkM?si=9KQuVwFd4zJHn71Y"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </article>
+    </div>
+
+    <footer>
+      <p>
+        Copyright © 2023
+        <a href="https://www.adrar-numerique.com/" target="_blank"
+          >ADRAR Pôle Numérique</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
